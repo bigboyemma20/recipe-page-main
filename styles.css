@@ -1,0 +1,161 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  font-family: 'Young serif', 'Outfit', sans-serif;
+  background-color: var(--Stone-100);
+  min-height: 100vh;
+  /* overflow: hidden; */
+  
+  
+}
+
+.card{
+    width: 100%;
+    max-width: 650px;
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 30px;
+    margin: auto;
+}
+
+.card-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1{
+    color: var(--Stone-900);
+    font-weight: 400;
+    margin: 20px 0;
+    
+}
+
+p{
+    font-family: 'Outfit', sans-serif;
+    color: var(--Stone-600);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.time{
+    background-color: var(--Rose-50);
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    padding: 10px 10px 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.time h2{
+    color: var(--Rose-800);
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.time-list, 
+.ingredients-list,
+.instructions-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size:14px ;
+    color: var(--Stone-600);
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.time-list li::marker,
+.ingredients-list li::marker,
+.instructions-list li::marker{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--Brown-800);
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2{
+    color: var(--Brown-800);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+}
+
+
+hr{
+    border: 0;
+    height: 1px;
+    background-color: var(--Stone-150);
+    margin: 20px 0;
+}
+
+.instructions-list{   
+    list-style-type: decimal;   
+
+}
+
+.nutrition-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.nutrient{
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Stone-600);
+    padding: 10px 0;
+}
+
+.nutrient-value{
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--Brown-800);
+    padding: 10px 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+  
+.attribution a { color: hsl(228, 45%, 44%); }
