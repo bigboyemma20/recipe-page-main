@@ -1,6 +1,6 @@
 :root{
 --White: hsl(0, 0%, 100%);
---Stone-100: hsl(30, 54%, 90%);
+--Stone-100: hsl(31, 53%, 90%);
 --Stone-150: hsl(30, 18%, 87%);
 --Stone-600: hsl(30, 10%, 34%);
 --Stone-900: hsl(24, 5%, 18%);
@@ -23,24 +23,26 @@ body{
   align-items: center;
   font-family: 'Young serif', 'Outfit', sans-serif;
   background-color: var(--Stone-100);
+  color: var(--Stone-600);
   min-height: 100vh;
-  /* overflow: hidden; */
-  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
   
 }
 
 .card{
     width: 100%;
-    max-width: 650px;
+    max-width: 660px;
     background-color: var(--White);
     border-radius: 20px;
-    padding: 30px;
-    margin: auto;
+    margin: 32px auto;
+    padding: 32px;
+    
+   
 }
 
 .card-image img{
     width: 100%;
-    height: auto;
     border-radius: 10px;
 }
 
@@ -58,7 +60,7 @@ p{
     font-weight: 500;
 }
 
-.time{
+.preparation-time{
     background-color: var(--Rose-50);
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
@@ -68,11 +70,11 @@ p{
     margin-bottom: 20px;
 }
 
-.time h2{
+.preparation-time h2{
     color: var(--Rose-800);
     font-weight: 700;
-    font-size: 16px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 16px;
 }
 
 .time-list, 
@@ -81,7 +83,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 14px;
     font-size:14px ;
     color: var(--Stone-600);
     list-style-type: disc;
@@ -124,7 +126,6 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-collapse: collapse;
     margin-top: 20px;
     padding-left: 20px;
 }
@@ -135,6 +136,7 @@ hr{
     font-weight: 500;
     color: var(--Stone-600);
     padding: 10px 0;
+   
 }
 
 .nutrient-value{
@@ -150,7 +152,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    
     padding: 20px 0;
 }
 .attribution { 
@@ -159,3 +161,10 @@ footer{
 }
   
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px) {
+    .card {
+      margin: 16px;
+      padding: 24px;
+    }
+  }
