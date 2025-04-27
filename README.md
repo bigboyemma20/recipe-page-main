@@ -27,7 +27,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/recipe-page-using-html-and-css-zGhGeyT1ze
 - Live Site URL: https://bigboyemma20.github.io/recipe-page-main/
 
 ## My process
