@@ -167,4 +167,29 @@ footer{
       margin: 16px;
       padding: 24px;
     }
-  }
+
+}
+
+@media (max-width: 375px) {
+    .card {
+      margin: 0 8px 8px;
+      padding: 0 16px 16px;
+      width: 100%;
+    }
+    h1{
+        font-size: 28px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .preparation-time h2{
+        font-size: 18px;
+    }
+    .time-list, 
+    .ingredients-list,
+    .instructions-list{
+        font-size: 12px;
+    }
+
+    
+}
